@@ -1,0 +1,154 @@
+{
+	"info": {
+		"_postman_id": "42de0993-68b4-49e0-b3eb-426c9d021b40",
+		"name": "phincon-shop-inventory",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "17647214"
+	},
+	"item": [
+		{
+			"name": "[POST] Create Inventory",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"product_name\": \"Wireless Mouse\",\r\n  \"product_quantity\": 50,\r\n  \"product_price\": 200000,\r\n  \"product_category\": \"Electronics\",\r\n  \"product_description\": \"A high-precision wireless mouse with ergonomic design.\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/shop/inventory",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"shop",
+						"inventory"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "[GE]T Get All Inventory",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/shop/inventory/all",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"shop",
+						"inventory",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "[GET] Get Inventory By Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/shop/inventory/4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"shop",
+						"inventory",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "[GET] Get Inventory By Name",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/shop/inventory/name/Wireless Mouse",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"shop",
+						"inventory",
+						"name",
+						"Wireless Mouse"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "[PUT] Inventory By Id",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"product_name\": \"Keyboard Mechanical\",\r\n  \"product_quantity\": 20,\r\n  \"product_price\": 1000000,\r\n  \"product_category\": \"Electronics\",\r\n  \"product_description\": \"A high-precision keyboard, designed to be good programmer.\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/shop/inventory/4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"shop",
+						"inventory",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "[DELETE] Delete IInventory By Id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/shop/inventory/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"shop",
+						"inventory",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
